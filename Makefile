@@ -35,7 +35,7 @@ fclean:
 	rm -f coding-style-reports.log
 	clear
 
-re:	fclean all
+re:	clean fclean all
 
 valgrind:	re
 	valgrind ./$(NAME)
