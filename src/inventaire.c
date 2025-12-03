@@ -42,7 +42,7 @@ void drawInventory(sfRenderWindow* window, Inventaire* inv, sfTexture* texPotion
     const int spacing = 80;
     const int startX = 85;
     const int startY = 121;
-    sfTexture *text = sfTexture_createFromFile("text/inventaire_3.png", NULL);
+    sfTexture *text = sfTexture_createFromFile("texture/inventaire_3.png", NULL);
     sfSprite *invent = sfSprite_create();
 
     sfSprite_setTexture(invent, text, sfTrue);
@@ -97,9 +97,9 @@ int inventaire_func(sfRenderWindow *window)
     addObj(&inventaire, (Objet){"Potion de soin", POTION, 50});
     addObj(&inventaire, (Objet){"Pomme", NOURRITURE, 50});
     addObj(&inventaire, (Objet){"Épée en fer", ARME, 50});
-    sfTexture* texPotion = loadTexture("text/potion_rouge2.png");
-    sfTexture* texPomme = loadTexture("text/pomme2.png");
-    sfTexture* texEpee = loadTexture("text/epee2.png");
+    sfTexture* texPotion = loadTexture("texture/potion_rouge2.png");
+    sfTexture* texPomme = loadTexture("texture/pomme2.png");
+    sfTexture* texEpee = loadTexture("texture/epee2.png");
     if (!texPotion || !texPomme || !texEpee) {
         fprintf(stderr, "Erreur de chargement des textures, fin du programme\n");
         return 1;

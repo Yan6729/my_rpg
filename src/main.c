@@ -33,7 +33,7 @@ void play_intro(sfRenderWindow *window)
     sfEvent event;
     sfMusic *music = play_music_loop("son/son 2.mp3");
 
-    texture = sfTexture_createFromFile("text/frame01.png", NULL);
+    texture = sfTexture_createFromFile("texture/frame01.png", NULL);
     sfSprite_setTexture(sprite, texture, sfTrue);
     while (sfRenderWindow_isOpen(window) && current_frame <= total_frames) {
         while (sfRenderWindow_pollEvent(window, &event)) {
@@ -45,7 +45,7 @@ void play_intro(sfRenderWindow *window)
             current_frame++;
             if (current_frame > total_frames)
                 break;
-            snprintf(path, sizeof(path), "text/frame0%d.png", current_frame);
+            snprintf(path, sizeof(path), "texture/frame0%d.png", current_frame);
             sfTexture_destroy(texture);
             texture = sfTexture_createFromFile(path, NULL);
             if (texture)

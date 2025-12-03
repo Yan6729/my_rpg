@@ -111,5 +111,6 @@ void destroy_menu(Menu_t *menu);
 sfMusic *play_music_loop(const char *filepath);
 void drawInventory(sfRenderWindow* window, Inventaire* inv, sfTexture* texPotion, sfTexture* texPomme, sfTexture* texEpee);
 int inventaire_func(sfRenderWindow *window);
+void drawInventory(sfRenderWindow* window, Inventaire* inv, sfTexture* texPotion, sfTexture* texPomme, sfTexture* texEpee);
 
 #endif

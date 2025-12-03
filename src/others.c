@@ -40,8 +40,8 @@ int init_window(sfRenderWindow **win)
 
 int load_textures(sfTexture **menu, sfTexture **settings, sfTexture **help)
 {
-    *menu = sfTexture_createFromFile("text/menu_rpg.jpg", NULL);
-    *settings = sfTexture_createFromFile("text/settings.png", NULL);
-    *help = sfTexture_createFromFile("text/help.png", NULL);
+    *menu = sfTexture_createFromFile("texture/menu_rpg.jpg", NULL);
+    *settings = sfTexture_createFromFile("texture/settings.png", NULL);
+    *help = sfTexture_createFromFile("texture/help.png", NULL);
     return 1;
 }

@@ -170,12 +170,12 @@ void draw_2d_map(sfRenderWindow *window, sfVector2f **two_d_map, text_t *texture
 
 text_t *init_textures() {
     text_t *textures = malloc(sizeof(text_t));
-    textures->tex_sol = sfTexture_createFromFile("text/sol_2.png", NULL);
-    textures->tex_arbre = sfTexture_createFromFile("text/arbre_2.png", NULL);
-    textures->tex_herbe = sfTexture_createFromFile("text/herbe_3.png", NULL);
-    textures->tex_case = sfTexture_createFromFile("text/case 2.png", NULL);
-    textures->tex_barr = sfTexture_createFromFile("text/barr_3.png", NULL);
-    textures->tex_barr_ = sfTexture_createFromFile("text/barr_2.png", NULL);
+    textures->tex_sol = sfTexture_createFromFile("texture/sol_2.png", NULL);
+    textures->tex_arbre = sfTexture_createFromFile("texture/arbre_2.png", NULL);
+    textures->tex_herbe = sfTexture_createFromFile("texture/herbe_3.png", NULL);
+    textures->tex_case = sfTexture_createFromFile("texture/case 2.png", NULL);
+    textures->tex_barr = sfTexture_createFromFile("texture/barr_3.png", NULL);
+    textures->tex_barr_ = sfTexture_createFromFile("texture/barr_2.png", NULL);
     
     if (!textures->tex_sol || !textures->tex_arbre || !textures->tex_herbe || !textures->tex_case) {
         printf("Erreur lors du chargement des textures!\n");
